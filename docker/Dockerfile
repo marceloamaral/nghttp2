@@ -1,4 +1,4 @@
-FROM k8s.gcr.io/debian-base-amd64:v2.0.0
+FROM debian:buster
 
 RUN /usr/local/bin/clean-install git g++ make binutils autoconf automake autotools-dev libtool pkg-config \
         zlib1g-dev libev-dev libjemalloc-dev ruby-dev libc-ares-dev bison \
